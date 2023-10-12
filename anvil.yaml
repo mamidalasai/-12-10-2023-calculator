@@ -1,6 +1,10 @@
 allow_embedding: false
-package_name: Classic_3
-name: Classic 3
+package_name: _12_10_2023_calculator
+name: 12-10-2023 calculator
+startup_form: Form1
 runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
   server_spec: null}
-services: []
+services:
+- source: /runtime/services/tables.yml
+  client_config: {}
+  server_config: {}

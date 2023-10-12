@@ -1,0 +1,76 @@
+container:
+  type: ColumnPanel
+  properties: {col_widths: '{}'}
+components:
+- type: Label
+  properties: {role: title, align: center, tooltip: '', border: '', foreground: white,
+    visible: true, text: ' Calculator', font_size: null, font: '', spacing_above: large,
+    icon_align: left, spacing_below: small, italic: false, background: '#0080FF',
+    bold: true, underline: false, icon: ''}
+  name: label_1
+  layout_properties: {grid_position: 'WZAXDD,KTFPPC', row_background: '', full_width_row: false}
+- type: TextBox
+  properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: enter number 1,
+    border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+    font: '', spacing_above: large, type: number, spacing_below: small, italic: false,
+    background: '', bold: false, underline: false}
+  name: text_box_1
+  layout_properties: {grid_position: 'BYEIZS,ZSPWDW'}
+  event_bindings: {pressed_enter: text_box_1_pressed_enter}
+- type: TextBox
+  properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: enter number 2,
+    border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+    font: '', spacing_above: small, type: number, spacing_below: large, italic: false,
+    background: '', bold: false, underline: false}
+  name: text_box_2
+  layout_properties: {grid_position: 'QQANEG,BVRHAC'}
+  event_bindings: {pressed_enter: text_box_2_pressed_enter}
+- type: Button
+  properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+    foreground: '', visible: true, text: sum (+), font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+    underline: false, icon: ''}
+  name: button_1
+  layout_properties: {grid_position: 'TJUCVF,PTLVPL', full_width_row: true}
+  event_bindings: {click: button_1_click}
+- type: Button
+  properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+    foreground: '', visible: true, text: sub (-), font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+    underline: false, icon: ''}
+  name: button_2
+  layout_properties: {grid_position: 'TJUCVF,PCPTVN', full_width_row: true}
+  event_bindings: {click: button_2_click}
+- type: Button
+  properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+    foreground: '', visible: true, text: mul (*), font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+    underline: false, icon: ''}
+  name: button_3
+  layout_properties: {grid_position: 'TJUCVF,NMREXO', full_width_row: true}
+  event_bindings: {click: button_3_click}
+- type: Button
+  properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+    foreground: '', visible: true, text: div (/), font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+    underline: false, icon: ''}
+  name: button_4
+  layout_properties: {grid_position: 'TJUCVF,KWMPMM', full_width_row: true}
+  event_bindings: {click: button_4_click}
+- type: Button
+  properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+    foreground: '', visible: true, text: per (%), font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+    underline: false, icon: ''}
+  name: button_5
+  layout_properties: {grid_position: 'TJUCVF,PGYBSO', full_width_row: true}
+  event_bindings: {click: button_5_click}
+- type: Button
+  properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+    foreground: '', visible: true, text: pow (**), font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+    underline: false, icon: ''}
+  name: button_6
+  layout_properties: {grid_position: 'TJUCVF,PFCYLO', full_width_row: true}
+  event_bindings: {click: button_6_click}
+is_package: true
